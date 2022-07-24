@@ -17,7 +17,6 @@ class Cottonmouth:
 
     def __str__(self):
         """function to show animal name and species
-
         Returns:
             string: that describes the animal
         """

@@ -1,7 +1,7 @@
 from datetime import date
 
 class Pig:
-    """creates the Pig class
+    """Creates the pig class
     """
     def __init__(self, name, species, shift, food):
         self.name = name
@@ -18,7 +18,6 @@ class Pig:
 
     def __str__(self):
         """function to show animal name and species
-
         Returns:
             string: that describes the animal
         """
