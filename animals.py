@@ -2,34 +2,36 @@ from models import (Copperhead, Cottonmouth, Hellbender, Hognose, Timberrattlesn
 from models import (Duck, Koi, Polarbear, Seal, Turtle)
 from models import (Alpaca, Goat, Llama, Pig, Pony)
 
-miss_fuzz = Llama("Miss Fuzz", "Domestic Llama", "Midday")
+miss_fuzz = Llama("Miss Fuzz", "Domestic Llama", "Midday", "Llama chow")
 print(miss_fuzz.name, miss_fuzz.species, miss_fuzz.date_added)
 
-bacon = Pig("Bacon", "Pig", "Morning")
-print(f"{bacon.name} the {bacon.species} is avaiable to pet during the {bacon.shift} shift.")
+bacon = Pig("Bacon", "Pig", "Morning", "not Bacon")
+print(f"{bacon.name} the {bacon.species} is available to pet during the {bacon.shift} shift.")
 
-feta = Goat("Feta", "Goat", "Afternoon")
+feta = Goat("Feta", "Goat", "Afternoon", "Corn")
+print(feta)
 
-briar = Alpaca("Briar", "Alpaca", "Midday")
+briar = Alpaca("Briar", "Alpaca", "Midday", "Grains")
+print(briar.feed())
 
-kabob = Pony("Kabob", "Pony", "Morning")
+kabob = Pony("Kabob", "Pony", "Morning", "Hay")
 
-fluffy = Hellbender("Fluffy", "Hellbender")
+fluffy = Hellbender("Fluffy", "Hellbender", "Tadpoles")
 
-medusa = Hognose("Medusa", "Hognose Snake")
+medusa = Hognose("Medusa", "Hognose Snake", "Field Mice")
 
-buttercup = Cottonmouth("Buttercup", "Cottonmouth Snake")
+buttercup = Cottonmouth("Buttercup", "Cottonmouth Snake", "Fish")
 
-spicy_noodle = Timberrattlesnake("Spicy Noodle", "Timber Rattlesnake")
+spicy_noodle = Timberrattlesnake("Spicy Noodle", "Timber Rattlesnake", "Rabbit")
 
-slinky = Copperhead("Slinky", "Copperhead Snake")
+slinky = Copperhead("Slinky", "Copperhead Snake", "Rats")
 
-fuzzy_wuzzy = Polarbear("Fuzzy Wuzzy", "Polar Bear")
+fuzzy_wuzzy = Polarbear("Fuzzy Wuzzy", "Polar Bear", "Big Fish")
 
-quacks = Duck("Quacks", "Duck")
+quacks = Duck("Quacks", "Duck", "Small Fish")
 
-goldie = Koi("Goldie", "Koi Fish")
+goldie = Koi("Goldie", "Koi Fish", "Bugs")
 
-flippy = Turtle("Flippy", "Red Belly Slider")
+flippy = Turtle("Flippy", "Red Belly Slider", "Grass")
 
-pups = Seal("Pups", "Seal")
+pups = Seal("Pups", "Seal", "Small Fish")
