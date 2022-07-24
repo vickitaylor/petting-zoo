@@ -1,9 +1,10 @@
 from datetime import date
 
 class Llama:
-    """Creates the Llama class
+    """ creating the Llama class with 4 parameters
     """
     def __init__(self, name, species, shift, food):
+        # Establish the properties of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
@@ -12,7 +13,7 @@ class Llama:
         self.food = food
 
     def feed(self):
-        """string to show when they ate
+        """string to show when they ate when the function is called
         """
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}.')
 
