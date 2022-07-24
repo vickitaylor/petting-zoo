@@ -1,17 +1,18 @@
-from slithering import (Copperhead, Cottonmouth, Hellbender, Hognose, Timberrattlesnake)
-from swimming import (Duck, Koi, Polarbear, Seal, Turtle)
-from walking import (Alpaca, Goat, Llama, Pig, Pony)
+from models import (Copperhead, Cottonmouth, Hellbender, Hognose, Timberrattlesnake)
+from models import (Duck, Koi, Polarbear, Seal, Turtle)
+from models import (Alpaca, Goat, Llama, Pig, Pony)
 
-miss_fuzz = Llama("Miss Fuzz", "Domestic Llama")
+miss_fuzz = Llama("Miss Fuzz", "Domestic Llama", "Midday")
 print(miss_fuzz.name, miss_fuzz.species, miss_fuzz.date_added)
 
-bacon = Pig("Bacon", "Pig")
+bacon = Pig("Bacon", "Pig", "Morning")
+print(f"{bacon.name} the {bacon.species} is avaiable to pet during the {bacon.shift} shift.")
 
-feta = Goat("Feta", "Goat")
+feta = Goat("Feta", "Goat", "Afternoon")
 
-briar = Alpaca("Briar", "Alpaca")
+briar = Alpaca("Briar", "Alpaca", "Midday")
 
-kabob = Pony("Kabob", "Pony")
+kabob = Pony("Kabob", "Pony", "Morning")
 
 fluffy = Hellbender("Fluffy", "Hellbender")
 
