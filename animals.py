@@ -16,15 +16,18 @@ print(briar.feed())
 
 kabob = Pony("Kabob", "Pony", "Morning", "Hay")
 
-fluffy = Hellbender("Fluffy", "Hellbender", "Tadpoles")
+fluffy = Hellbender("Fluffy", "Hellbender", "Tadpoles", 632485)
 
-medusa = Hognose("Medusa", "Hognose Snake", "Field Mice")
+medusa = Hognose("Medusa", "Hognose Snake", "Field Mice", 754369)
 
-buttercup = Cottonmouth("Buttercup", "Cottonmouth Snake", "Fish")
+buttercup = Cottonmouth("Buttercup", "Cottonmouth Snake", "Fish", 127953)
 
-spicy_noodle = Timberrattlesnake("Spicy Noodle", "Timber Rattlesnake", "Rabbit")
+spicy_noodle = Timberrattlesnake("Spicy Noodle", "Timber Rattlesnake", "Rabbit", 456753)
 
-slinky = Copperhead("Slinky", "Copperhead Snake", "Rats")
+slinky = Copperhead("Slinky", "Copperhead Snake", "Rats", 987654)
+print(f"{slinky.name} has a chip number of {slinky.chip_number}.")
+slinky.chip_number = 123456
+print(f"{slinky.name} has a chip number of {slinky.chip_number}.")
 
 fuzzy_wuzzy = Polarbear("Fuzzy Wuzzy", "Polar Bear", "Big Fish")
 

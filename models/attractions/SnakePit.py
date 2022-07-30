@@ -13,3 +13,7 @@ class SnakePit:
             animal (dict): adds the animal dictionary to the list
         """
         self.animals.append(animal)
+
+    @property
+    def last_critter_added(self):
+        return f'The last critter added to the {self.attraction_name} was {self.animals[-1]}'
