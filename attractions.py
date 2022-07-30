@@ -39,12 +39,12 @@ wild_wetlands.add_animal(pups)
 
 print(f"{varmint_village.attraction_name} is where you will find {varmint_village.description} Like:")
 for animal in varmint_village.animals:
-    print(f"    * {animal.name}")
+    print(f"    * {animal.name} the {animal.species}")
 
 print(f"{slither_inn.attraction_name} is where you will find {slither_inn.description} Like:")
 for animal in slither_inn.animals:
-    print(f"    * {animal.name}")
+    print(f"    * {animal.name} the {animal.species}")
 
 print(f"{wild_wetlands.attraction_name} is where you will find {wild_wetlands.description} Like:")
 for animal in wild_wetlands.animals:
-    print(f"    * {animal.name}")
+    print(f"    * {animal.name} the {animal.species}")
