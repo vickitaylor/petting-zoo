@@ -39,3 +39,58 @@ class Person:
     @property
     def full_name(self):
         return f'{self.first_name} {self.last_name}'
+
+
+# Electric motorcycle
+class Zero:
+    def __init__(self):
+        self.battery_kwh = 0
+        self.main_color = 0
+        self.maximum_occupancy = 0
+
+    def charge_battery(self):
+        ...
+
+
+# classes that have the same properties
+# Propellor light aircraft
+class Cessna:
+    def __init__(self):
+        self.fuel_capacity = 0
+        self.main_color = 0
+        self.maximum_occupancy = 0
+
+    def refuel_tank(self):
+        ...
+
+# Electric car
+class Tesla:
+    def __init__(self):
+        self.battery_kwh = 0
+        self.main_color = 0
+        self.maximum_occupancy = 0
+
+    def charge_battery(self):
+        ...
+
+# Gas powered truck
+class Ram:
+    def __init__(self):
+        self.fuel_capacity = 0
+        self.main_color = 0
+        self.maximum_occupancy = 0
+
+    def refuel_tank(self):
+        ...
+
+# refactoring classes to have a parent class and then a child class that would take the parent
+# class properties
+class Vehicle:
+    def __init__(self):
+        self.main_color = ""
+        self.maximum_occupancy = ""
+
+# child class that inherits parents properties
+class Tesla(Vehicle):
+    def __init__(self):
+        self.battery_kwh = 0
