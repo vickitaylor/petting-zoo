@@ -2,7 +2,7 @@ from animals import (Copperhead, Cottonmouth, Hellbender,
                      Hognose, Timberrattlesnake)
 from animals import (Duck, Koi, Polarbear, Seal, Turtle)
 from animals import (Alpaca, Goat, Llama, Pig, Pony)
-from attractions import PettingZoo, SnakePit, Wetlands
+from attractions import PettingZoo, SnakePit, Wetlands, wetlands
 
 bob = Duck("Bob", "Duck", "watercress sandwiches", 456789)
 bob.run()
@@ -104,3 +104,23 @@ print(wild_wetlands.last_critter_added)
 fuzzy_wuzzy.feed()
 miss_fuzz.feed()
 kabob.ney()
+
+dolly = Llama("Dolly", "miniature llama", "morning", "hay", 1033)
+snappy = Koi("Snappy", "Koi", "fish", 1044)
+
+varmint_village.add_animal_pythonic(dolly)
+varmint_village.add_animal_type_check(dolly)
+slither_inn.add_animal_pythonic(dolly)
+wild_wetlands.add_animal_pythonic(dolly)
+
+varmint_village.add_animal_pythonic(snappy)
+slither_inn.add_animal_pythonic(snappy)
+wild_wetlands.add_animal_pythonic(snappy)
+
+slither_inn.add_animal_pythonic(medusa)
+wild_wetlands.add_animal_pythonic(medusa)
+varmint_village.add_animal_pythonic(medusa)
+
+slither_inn.add_animal_pythonic(quacks)
+wild_wetlands.add_animal_pythonic(quacks)
+varmint_village.add_animal_pythonic(quacks)
